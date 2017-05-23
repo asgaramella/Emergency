@@ -15,7 +15,8 @@ public class PatientComparator implements Comparator<Patient> {
 	public int compare(Patient o1, Patient o2) {
 		Patient.PatientStatus s1 = o1.getStatus();
 		Patient.PatientStatus s2 = o2.getStatus();
-
+		
+		//entrambi i  pazienti devono essere in lista di attesa
 		if ((s1 != Patient.PatientStatus.WHITE) && (s1 != Patient.PatientStatus.YELLOW)
 				&& (s1 != Patient.PatientStatus.RED))
 			throw new IllegalArgumentException(

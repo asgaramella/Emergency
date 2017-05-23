@@ -5,7 +5,9 @@ public class Patient {
 	public enum PatientStatus { NEW, WHITE, YELLOW, RED, BLACK, TREATING, OUT } ;
 	
 	private String name ;
+	//info per gestire lista di attesa
 	private PatientStatus status ;
+	//istante di ingresso nella coda
 	private int queueTime ;
 	
 	public Patient(String name) {
